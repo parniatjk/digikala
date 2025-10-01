@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+@font-face {
+  font-family: Vaziri;
+  src: url(../fonts/vazir-font/Vazir.eot), url(../fonts/vazir-font/Vazir.ttf),
+    url(../fonts/vazir-font/Vazir.woff), url(../fonts/vazir-font/Vazir.woff2);
+}
+@font-face {
+  font-family: VasiriNumber;
+  src: url(../fonts/vazir-font/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.eot),
+    url(../fonts/vazir-font/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.ttf),
+    url(../fonts/vazir-font/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.woff),
+    url(../fonts/vazir-font/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.woff2);
+}
+:root {
+  --font-family: Vaziri;
+  --number-fa: VasiriNumber;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  font-size: 14px;
+  font-weight: bold;
+  color: #7c7e83;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next,
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+}
+.swiper-button-disabled {
+  opacity: 0 !important;
+}
